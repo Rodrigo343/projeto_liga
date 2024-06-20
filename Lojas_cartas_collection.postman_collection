@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "5bd18197-6ad4-4dad-b195-256c7eab30e3",
+		"name": "Lojas_cartas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19128582"
+	},
+	"item": [
+		{
+			"name": "EdicaoCartas",
+			"item": [
+				{
+					"name": "Inserir Edicao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IlRlc3RAZ21haS5jb20iLCJyYW1kb20iOiI2Njc0MDVhNzAxNzg4Iiwic3ViIjowLCJuYW1lIjoiVGVzdGUiLCJkYXRhX2V4cGlyYWNhbyI6eyJkYXRlIjoiMjAyNC0wNi0yMSAwMDozNDoxNS4wMDYwMTMiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZVwvQmVybGluIn19.UDxPQ7wDBwrUBeypC41uK_kwYdQTdiEaOlEsWZQMTio",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nm_edicao_pt\": \"Breaking News (OTP)\",\r\n    \"nm_edicao_en\": \"Breaking News (OTP)\",\r\n    \"dt_lancamento\": \"2024-04-19\",\r\n    \"quantidade_cartas\": 80\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/grupo_edicao_cartas/edicao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"grupo_edicao_cartas",
+								"edicao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Edicao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IlRlc3RAZ21haS5jb20iLCJyYW1kb20iOiI2Njc0MDVhNzAxNzg4Iiwic3ViIjowLCJuYW1lIjoiVGVzdGUiLCJkYXRhX2V4cGlyYWNhbyI6eyJkYXRlIjoiMjAyNC0wNi0yMSAwMDozNDoxNS4wMDYwMTMiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZVwvQmVybGluIn19.UDxPQ7wDBwrUBeypC41uK_kwYdQTdiEaOlEsWZQMTio",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nm_edicao_pt\": \"Breaking News (OTP)\",\r\n    \"nm_edicao_en\": \"Breaking News (OTP)\",\r\n    \"dt_lancamento\": \"2024-04-19\",\r\n    \"quantidade_cartas\": 80\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/grupo_edicao_cartas/edicao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"grupo_edicao_cartas",
+								"edicao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inativar Edicao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IlRlc3RAZ21haS5jb20iLCJyYW1kb20iOiI2Njc0MDVhNzAxNzg4Iiwic3ViIjowLCJuYW1lIjoiVGVzdGUiLCJkYXRhX2V4cGlyYWNhbyI6eyJkYXRlIjoiMjAyNC0wNi0yMSAwMDozNDoxNS4wMDYwMTMiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZVwvQmVybGluIn19.UDxPQ7wDBwrUBeypC41uK_kwYdQTdiEaOlEsWZQMTio",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nm_edicao_pt\": \"Breaking News (OTP)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/grupo_edicao_cartas/edicao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"grupo_edicao_cartas",
+								"edicao"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cartas",
+			"item": [
+				{
+					"name": "Inserir Carta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IlRlc3RAZ21haS5jb20iLCJyYW1kb20iOiI2NjczODRiNzhkNWJmIiwic3ViIjowLCJuYW1lIjoiVGVzdGUiLCJkYXRhX2V4cGlyYWNhbyI6eyJkYXRlIjoiMjAyNC0wNi0yMCAxNToyNDowNy41Nzg5OTQiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZVwvQmVybGluIn19.g26qdDdTSPGAcng8jqeVzgOFRAbVO4Kia6jRnErZkQ0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nm_carta_pt\" : \"Herigast, Nulavérneo em Erupção\",\r\n    \"nm_carta_en\" : \"Herigast, Erupting Nullkite\",\r\n    \"cor\" : \"Branco\",\r\n    \"tipo\" : \"Criatura Lendária\",\r\n    \"artista\" : \"Lucas Graciano\",\r\n    \"raridade\" : \"Raro\",\r\n    \"imagem\" : \"img\",\r\n    \"descricao\" : \"Emergir (Você pode conjurar esta mágica sacrificando uma criatura e pagando o custo de emergir menos o valor de mana daquela criatura.) Quando você conjura esta mágica, você pode exilar sua mão. Se fizer isso, compre três cards. Voar: Cada mágica de criatura que você conjura tem emergir. O custo de emergir é igual ao seu custo de mana.\",\r\n    \"preco\" : 7.0,\r\n    \"quantidade\" : 1,\r\n    \"id_edicao\" : 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/grupo_cartas/cartas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"grupo_cartas",
+								"cartas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Carta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IlRlc3RAZ21haS5jb20iLCJyYW1kb20iOiI2Njc0MDVhNzAxNzg4Iiwic3ViIjowLCJuYW1lIjoiVGVzdGUiLCJkYXRhX2V4cGlyYWNhbyI6eyJkYXRlIjoiMjAyNC0wNi0yMSAwMDozNDoxNS4wMDYwMTMiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZVwvQmVybGluIn19.UDxPQ7wDBwrUBeypC41uK_kwYdQTdiEaOlEsWZQMTio",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nm_carta_pt\" : \"Herigast, Nulavérneo em Erupção\",\r\n    \"nm_carta_en\" : \"Herigast, Erupting Nullkite\",\r\n    \"cor\" : \"Branco\",\r\n    \"tipo\" : \"Criatura Lendária\",\r\n    \"artista\" : \"Lucas Graciano\",\r\n    \"raridade\" : \"Raro\",\r\n    \"imagem\" : \"img\",\r\n    \"descricao\" : \"Emergir (Você pode conjurar esta mágica sacrificando uma criatura e pagando o custo de emergir menos o valor de mana daquela criatura.) Quando você conjura esta mágica, você pode exilar sua mão. Se fizer isso, compre três cards. Voar: Cada mágica de criatura que você conjura tem emergir. O custo de emergir é igual ao seu custo de mana.\",\r\n    \"preco\" : 7.0,\r\n    \"quantidade\" : 1,\r\n    \"id_edicao\" : 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/grupo_cartas/cartas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"grupo_cartas",
+								"cartas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inativar Edicao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IlRlc3RAZ21haS5jb20iLCJyYW1kb20iOiI2Njc0MDVhNzAxNzg4Iiwic3ViIjowLCJuYW1lIjoiVGVzdGUiLCJkYXRhX2V4cGlyYWNhbyI6eyJkYXRlIjoiMjAyNC0wNi0yMSAwMDozNDoxNS4wMDYwMTMiLCJ0aW1lem9uZV90eXBlIjozLCJ0aW1lem9uZSI6IkV1cm9wZVwvQmVybGluIn19.UDxPQ7wDBwrUBeypC41uK_kwYdQTdiEaOlEsWZQMTio",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nm_carta_pt\" : \"Herigast, Nulavérneo em Erupção\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/grupo_cartas/cartas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"grupo_cartas",
+								"cartas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Test@gmai.com\",\r\n    \"senha\":\"Teste123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Cartas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Test@gmai.com\",\r\n    \"senha\":\"Teste123\",\r\n    \"data_expiracao\":\"2024-06-19\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/listaCartas",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"listaCartas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Test@gmai.com\",\r\n    \"senha\":\"Teste123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/logout",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
